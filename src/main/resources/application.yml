@@ -1,0 +1,22 @@
+server:
+  port: 20000
+  shutdown: graceful # by default 30 seconds
+
+spring:
+  datasource:
+    hikari:
+      connection-test-query: 'select 1'
+      connection-timeout: 3000 # 3 sec.
+      validation-timeout: 1000 # 1 sec
+
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:53306/s_deadlock_test?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+      username: root
+      password: 53306
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
