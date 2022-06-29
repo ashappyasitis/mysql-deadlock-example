@@ -10,7 +10,7 @@ spring:
       validation-timeout: 1000 # 1 sec
 
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbc-url: jdbc:mysql://localhost:53306/s_deadlock_test?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+      jdbc-url: jdbc:mysql://localhost:3306/s_deadlock_test?useSSL=false&useUnicode=yes&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
       username: root
       password: 53306
 
